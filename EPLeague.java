@@ -29,6 +29,9 @@ public class EPLeague {
 		ball.setPositionY(40);
 		field.startMancity(city1, city2, city3,ball);
 		
+		//ball.getBallPosition();
+		
+		
 		
 	 }
 		catch(NullPointerException nptr){

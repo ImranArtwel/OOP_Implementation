@@ -8,13 +8,11 @@ public class Ball {
 	
 	
 	
-	private Ball(){
+	private Ball(int x, int y){
+	positionX = x;
+	positionY =y;
+	}
 	
-	}
-	static {
-		ball = new Ball();
-	}
-
 	public int getPositionX() {
 		return positionX;
 	}
@@ -33,7 +31,12 @@ public class Ball {
 	
 	public static Ball getBallInstance(int x, int y)
 	{
+		if(ball == null)
+			ball = new Ball(x,y);
 	 	return ball;
+	}
+	public String getBallPosition(){
+		return "("+ball.getPositionX() + ","+ball.getPositionY()+")";
 	}
 	
 

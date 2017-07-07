@@ -18,8 +18,7 @@ public abstract class Player {
 	
 	public static  void passBall(Player player1, Player player2, Player player3, Ball ball){
 		
-		System.out.println("Ball is at position ("+ ball.getPositionX() + ","+ ball.getPositionY() + 
-				") with "+ player1.getName());
+		System.out.println("Ball is at position "+ball.getBallPosition()+" with "+ player1.getName());
 		
 		System.out.println(player1.getName() + " passes ball to "+ player2.getName());
 		ball.setPositionX(player2.getPositionX());
@@ -27,8 +26,7 @@ public abstract class Player {
 
 		
 		
-		System.out.println("Ball is at position ("+ ball.getPositionX() + ","+ ball.getPositionY() + 
-				") with "+ player2.getName());
+		System.out.println("Ball is at position "+ball.getBallPosition()+" with "+ player2.getName());
 			
 		System.out.println(player2.getName() + " passes ball to "+ player3.getName());
 		
